@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color-one: hsl(171, 66%, 44%);
+    --color-two: hsl(233, 100%, 69%);
+    --color-three: hsl(210, 10%, 33%);
+    --color-four: hsl(201, 11%, 66%);
+}
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* Container */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 767px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+/* Start Home-page */
+.home-page {
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: cover;
+    padding-top: 130px;
+}
+.home-page .container {
+    text-align: center;
+    width: 650px;
+}
+@media (max-width: 767px) {
+    .home-page .container {
+        width: 100%;
+    }
+}
+.home-page .logo img {
+    margin-bottom: 30px;
+}
+.home-page .content h2 {
+    color: var(--color-three);
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.home-page .content p {
+    font-size: 18px;
+    color: var(--color-four);
+    line-height: 1.6;
+}
+.home-page .links a {
+    padding: 15px 25px;
+    border-radius: 23px;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+@media (max-width: 500px) {
+    .home-page .links a {
+        width: fit-content;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .home-page .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.home-page .links .ios {
+    background-color: var(--color-one);
+    margin-right: 10px;
+}
+@media (max-width: 500px) {
+    .home-page .links .ios {
+        margin-right: 0;
+    }
+}
+.home-page .links .mac {
+    background-color: var(--color-two);
+}
+
+/* Start snippets */
+.snippets {
+    padding-top: 250px;
+    text-align: center;
+}  
+.snippets .container {
+    width: 650px;
+}
+@media (max-width: 767px) {
+    .snippets .container {
+        width: 100%;
+    }
+}
+.snippets h3 {
+    color: var(--color-three);
+    font-size: 34px;
+    margin: 0;
+}
+.snippets p {
+    color: var(--color-four);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Start quick-search */
+.quick-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (max-width: 767px) {
+    .quick-search {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+.quick-search .img img {
+    width: 400px;
+    margin-right: 50px;
+}
+@media (min-width: 1200px) {
+    .quick-search .img img {
+        width: 620px;
+    }
+}
+@media (max-width: 767px) {
+    .quick-search .img img {
+        margin: 0;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 450px) {
+    .quick-search .img img {
+        width: 350px;
+    }
+}
+.quick-search .content {
+    width: 400px;
+}
+.quick-search .content .box:not(:last-child) {
+    margin-bottom: 40px;
+}
+@media (max-width: 450px) {
+    .quick-search .content .box {
+        width: calc(100% - 5em);
+        margin: auto;
+    }
+}
+.quick-search .content .box h4 {
+    color: var(--color-three);
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.quick-search .content .box p {
+    color: var(--color-four);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Start Access Clipboar */
+.access-clipboard {
+    text-align: center;
+    padding-top: 60px;
+}
+.access-clipboard .container {
+    width: 620px;
+}
+@media (max-width: 767px) {
+    .access-clipboard .container {
+        width: 100%;
+    }
+}
+.access-clipboard h3 {
+    color: var(--color-three);
+    font-size: 30px;
+    margin: 0;
+}
+.access-clipboard p {
+    color: var(--color-four);
+    font-size: 18px;
+    line-height: 1.6;
+}
+.access-clipboard img {
+    width: 650px;
+    margin-top: 40px;
+}
+@media (max-width: 700px) {
+    .access-clipboard img {
+        width: 500px;
+    }
+}
+@media (max-width: 530px) {
+    .access-clipboard img {
+        width: 350px;
+    }
+}
+@media (max-width: 380px) {
+    .access-clipboard img {
+        width: 300px;
+    }
+}
+
+/* Start Workflow */
+.workflow {
+    padding-bottom: 100px;
+}
+.workflow header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.workflow header h3 {
+    color: var(--color-three);
+    font-size: 30px;
+}
+.workflow header p {
+    color: var(--color-four);
+    font-size: 18px;
+}
+.workflow .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.workflow .box {
+    text-align: center;
+}
+.workflow .box h3 {
+    color: var(--color-three);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 40px;
+}
+.workflow .box p {
+    color: var(--color-four);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Start Logo */
+.logos {
+    padding-bottom: 100px;
+}
+.logos .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.logos img {
+    margin-bottom: 15px;
+}
+
+/* Start Download Section */
+.download {
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+.download .container {
+    text-align: center;
+    width: 620px;
+}
+@media (max-width: 767px) {
+    .download .container {
+        width: 100%;
+    }
+}
+.download .content h3 {
+    color: var(--color-three);
+    font-size: 30px;
+    margin: 0;
+}
+.download .container p {
+    color: var(--color-four);
+    font-size: 18px;
+    line-height: 1.6;
+}
+.download .links a {
+    padding: 15px 25px;
+    border-radius: 23px;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+@media (max-width: 767px) {
+    .download .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.download .links .ios {
+    background-color: var(--color-one);
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .download .links .ios {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+.download .links .mac {
+    background-color: var(--color-two);
+}
+
+/* Start Footer */
+footer {
+    background-color: hsla(210, 2%, 81%, 0.455);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        height: 300px;
+        text-align: center;
+    }
+}
+footer .logo img {
+    width: 50px;
+    position: relative;
+    right: 130px;
+    margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+    footer .logo img {
+        right: 80px;
+    }
+}
+@media (max-width: 767px) {
+    footer .logo img {
+        right: 0;
+    }
+}
+footer .links {
+    display: flex;
+    flex-direction: column;
+}
+footer .links:not(:last-child) {
+    margin-right: 20px;
+}
+@media (max-width: 767px) {
+    footer .links:not(:last-child) {
+        margin: 0;
+    }
+}
+footer .links a {
+    margin-bottom: 10px;
+    color: var(--color-three);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+footer .links a:hover {
+    color: var(--color-one);
+}
+footer .social {
+    position: relative;
+    left: 130px;
+}
+@media (max-width: 767px) {
+    footer .social {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 900px) {
+    footer .social {
+        left: 100px;
+    }
+} 
+@media (max-width: 767px) {
+    footer .social {
+        left: 0;
+    }
+}
+footer .social a {
+    font-size: 25px;
+    color: var(--color-three);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+footer .social a:not(:last-child) {
+    margin-right: 7px;
+}
+footer .social a:hover {
+    color: var(--color-one);
+}
+footer .social a:hover  {
+    color: var(--color-one);
+}
+footer .social a img {
+    margin-right: 7px;
+}
